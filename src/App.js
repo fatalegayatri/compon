@@ -1,46 +1,35 @@
-import Button from "./components/Button";
-import {
-  GoBellFill,
-  GoDownload,
-  GoFileDirectory,
-  GoUnmute,
-  GoVerified,
-} from "react-icons/go";
-
+import React from "react";
+import Accordion from "./components/Accordion";
 function App() {
+  const data = [
+    {
+      id: "1efjwk",
+      title: "What is React?",
+      content: "React is a front end javascript framework",
+    },
+    {
+      id: "1efjwk1",
+      title: "What is React?",
+      content: "React is a front end javascript framework",
+    },
+    {
+      id: "1efjwk3",
+      title: "What is css?",
+      content:
+        "React is a front end javascript framework lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      id: "1efjwk4",
+      title: "What is javascript?",
+      content: "React is a front end javascript framework",
+    },
+  ];
+
   return (
     <div>
-      <div>
-        <Button primary whiteBg rounded>
-          <GoDownload />
-          Click me
-        </Button>
-      </div>
-      <div>
-        <Button secondary whiteBg>
-          <GoFileDirectory />
-          save me
-        </Button>
-      </div>
-      <div>
-        <Button warning whiteBg>
-          <GoBellFill />
-          dowmload{" "}
-        </Button>
-      </div>
-      <div>
-        <Button danger className="mt-2">
-          {" "}
-          <GoUnmute />
-          dowmload{" "}
-        </Button>
-      </div>
-
-      <Button secondary whiteBg>
-        <GoVerified />
-        dowmload{" "}
-      </Button>
+      <Accordion data={data} />
     </div>
   );
 }
+
 export default App;
