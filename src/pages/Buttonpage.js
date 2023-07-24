@@ -7,7 +7,7 @@ import {
   GoVerified,
 } from "react-icons/go";
 
-function Buttonpage() {
+function ButtonPage() {
   return (
     <div>
       <div>
@@ -43,4 +43,4 @@ function Buttonpage() {
     </div>
   );
 }
-export default Buttonpage;
+export default ButtonPage;
