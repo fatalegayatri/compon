@@ -23,7 +23,7 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button warning whiteBg>
+        <Button warning whiteBg rounded>
           <GoBellFill />
           dowmload{" "}
         </Button>
@@ -36,7 +36,7 @@ function ButtonPage() {
         </Button>
       </div>
 
-      <Button secondary whiteBg>
+      <Button secondary whiteBg rounded className="mt-2">
         <GoVerified />
         dowmload{" "}
       </Button>

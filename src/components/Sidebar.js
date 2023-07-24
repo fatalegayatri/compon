@@ -1,11 +1,15 @@
 import React from "react";
 import Link from "./Link";
 
-const Sidebar = () => {
+const Sidebar = ({ className }) => {
   const links = [
     {
       label: "Accordion",
       path: "/Accordion",
+    },
+    {
+      label: "Modal",
+      path: "/Modal",
     },
     {
       label: "Dropdown",
@@ -18,12 +22,13 @@ const Sidebar = () => {
   ];
   const rederedList = links.map((link) => {
     return (
-      <Link key={link.label} to={link.path}>
+      <Link key={link.label} to={link.path} className={"mb-3"}>
         {link.label}
       </Link>
     );
   });
-  return <div className="">{rederedList}</div>;
+
+  return <div className="flex flex-col">{rederedList}</div>;
 };
 
 export default Sidebar;
