@@ -13,7 +13,7 @@ function Dropdown({ options, onChange, value }) {
     setIsopen(false);
     onChange(option);
   };
-  console.log(options);
+
   const renderedOption = options.map((option) => {
     return (
       <div

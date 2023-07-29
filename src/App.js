@@ -5,6 +5,7 @@ import ButtonPage from "./pages/ButtonPage";
 import DropdownPage from "./pages/DropdownPage";
 import Sidebar from "./components/Sidebar";
 import ModalPage from "./pages/ModalPage";
+import TablePage from "./pages/TablePage";
 function App() {
   return (
     <div className="container mx-auto flex flex-row sticky   top-0  gap-10">
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/Modal">
           <ModalPage />
+        </Route>
+        <Route path="/Table">
+          <TablePage />
         </Route>
       </div>
     </div>

@@ -11,7 +11,7 @@ function Link({ to, children, className }) {
     Nagivate(to);
     event.preventDefault();
   };
-  console.log(to);
+
   const classes = classNames("text-blue-400  ", className, {
     "text-blue-600 font-bold border-l-4 border-gray-500 pl-3 ":
       currentPath === to,
