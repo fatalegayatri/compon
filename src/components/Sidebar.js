@@ -23,6 +23,10 @@ const Sidebar = ({ className }) => {
       label: "Table",
       path: "/Table",
     },
+    {
+      label: "Counter",
+      path: "/Counter",
+    },
   ];
   const rederedList = links.map((link) => {
     return (

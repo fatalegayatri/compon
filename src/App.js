@@ -6,6 +6,7 @@ import DropdownPage from "./pages/DropdownPage";
 import Sidebar from "./components/Sidebar";
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
+import CounterPage from "./pages/CounterPage";
 function App() {
   return (
     <div className="container mx-auto flex flex-row sticky   top-0  gap-10">
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/Table">
           <TablePage />
+        </Route>
+        <Route path="/Counter">
+          <CounterPage initialCount={60} />
         </Route>
       </div>
     </div>
